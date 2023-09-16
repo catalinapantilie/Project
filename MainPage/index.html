@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+
+    <title>Sa vorbim despre carti</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="poze/logo-book.png"
+          alt="Books logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Cauta o carte</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Dezbatere</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Citate</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--4">Lista mea de carti</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          “The more that you <span class="highlight">read</span>, the more
+          things you will <span class="highlight">know</span>.<br />
+          The more that you <span class="highlight">learn</span>, the more
+          places you'll <span class="highlight">go</span>.”
+        </h1>
+        <button class="btn--text btn--scroll-to">
+          Descopera mai multe &DownArrow;
+        </button>
+        <img src="poze/unsplash-3.JPG" class="header__img" alt="Books image" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title" id="section__title--1">
+        <h2 class="section__description" id="section__description--1">
+          Cauta o carte
+        </h2>
+        <form id="search-form">
+          <input type="text" id="search-box" placeholder="Cauta...." />
+          <button>Descopera</button>
+        </form>
+        <div id="search-result"></div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Chat carti</h2>
+        <h3 class="section__header">Ce ai mai citit in ultima vreme</h3>
+      </div>
+
+      <div class="rooms">
+        <div class="rooms__tab-container">
+          <button
+            class="btn rooms__tab rooms__tab--1 rooms__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Literatura clasica
+          </button>
+          <button class="btn rooms__tab rooms__tab--2" data-tab="2">
+            <span>02</span>Literatura contemporana
+          </button>
+          <button class="btn rooms__tab rooms__tab--3" data-tab="3">
+            <span>03</span>Dezvoltare personala
+          </button>
+        </div>
+        <div class="rooms__content rooms__content--1 rooms__content--active">
+          <h5 class="rooms__header">Literatura clasica</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <a href="http://localhost:3000" target="_blank">
+            <button class="btn__chat">Camera ID:123</button></a
+          >
+        </div>
+
+        <div class="rooms__content rooms__content--2">
+          <h5 class="rooms__header">Literatura contemporană</h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <a href="http://localhost:3000" target="_blank">
+            <button class="btn__chat">Camera ID:124</button></a
+          >
+        </div>
+        <div class="rooms__content rooms__content--3">
+          <h5 class="rooms__header">Dezvoltarea personală</h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <a href="http://localhost:3000" target="_blank">
+            <button class="btn__chat">Camera ID:125</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--quotess">
+        <h2 class="section__description">Ganduri excelente</h2>
+        <h3 class="section__header">
+          „O cameră fără cărți este ca un corp fără suflet.”
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="quotes">
+            <h5 class="quotes__header">Valoarea lucrurilor</h5>
+            <blockquote class="quotes__text">
+              „Valoarea unui lucru creşte proporțional cu dificultatea de a-l
+              dobândi.”
+            </blockquote>
+            <address class="quotes__author">
+              <h6 class="quotes__name">Thomas Mann -></h6>
+              <p class="quotes__location">-> Romancier german</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="quotes">
+            <h5 class="quotes__header">Soluții salvatoare</h5>
+            <blockquote class="quotes__text">
+              „Într-o situaţie disperată, numai curajul şi inteligenţa te mai
+              pot ajuta.
+            </blockquote>
+            <address class="quotes__author">
+              <h6 class="quotes__name">Jean Piaget -></h6>
+              <p class="quotes__location">->Filozof elvetian</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="quotes">
+            <h5 class="quotes__header">Scopul umorului</h5>
+            <blockquote class="quotes__text">
+              „Scopul unei glume nu este de a degrada fiinţa umană, ci de a ne
+              reaminti că ea este deja degradată.”
+            </blockquote>
+            <address class="quotes__author">
+              <h6 class="quotes__name">George Orwell -></h6>
+              <p class="quotes__location">->Scriitor englez</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">
+        “Success is stumbling from failure to failure with no loss of
+        enthusiasm.”
+      </p>
+      <div class="mylist__link" id="section--4">
+        <a href="/BookList/index.html" target="_blank" class="nav__link--btn">
+          Lista mea de carti
+        </a>
+      </div>
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__item" href="#">Blog</a>
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="https://www.instagram.com"
+            target="_blank"
+            ><img src="poze/icons8-instagram-48.png" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="https://ro-ro.facebook.com"
+            target="_blank"
+            ><img src="poze/icons8-meta-48.png" alt="Facebook"
+          /></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__item" href="#">Contact us</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
